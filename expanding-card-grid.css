@@ -1,0 +1,78 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+}
+
+.card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      width: 80%;
+}
+
+.card {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.4s ease;
+}
+
+.card h2,
+.card p {
+      position: absolute;
+      color: white;
+      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+}
+
+.card h2 {
+      top: 20px;
+      left: 20px;
+      font-size: 2rem;
+}
+
+.card p {
+      bottom: 20px;
+      left: 20px;
+      font-size: 1.2rem;
+}
+
+.card:hover {
+      transform: scale(1.1);
+}
+
+.card:hover h2,
+.card:hover p {
+      opacity: 1;
+}
+
+.nature {
+      background-image: url('https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.technology {
+      background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.travel {
+      background-image: url('https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.art {
+      background-image: url('https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
